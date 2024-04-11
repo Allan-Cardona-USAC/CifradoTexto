@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!--encabezado de Pagina -->
+    <header>
+        <img src="imagenes/alura_latam_logo.png" alt="Logo de Alura"class="logo">
+    </header>
+    <!--Cuerpo de Pagina -->
+    <main>
+        <!--Section para crear caja de texto y los botones de interaccion-->
+        <section >
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">⭐ Solo letras minúsculas y sin acento.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()" >ENCRIPTAR</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()" >DESENCRIPTAR</button>
+            </div>
+        </section>
+        <!--Seccion utilizada para que se muestre el texto encriptado ó desencriptado-->
+        <section>
+           <textarea id="unico" class="text-mensaje" cols="20" rows="10"></textarea>
+           <div class="botones">
+            <button class="btn-copiar" onclick="btnCopiar()" >COPIAR</button>
+           </div>
+        </section>
+    </main>
+    <!--Pie de Pagina -->
+    <footer>
+        <img src="/imagenes/alura_latam_logo.png" alt="alura_latam_logo">
+        <p class="derechosAutor">&copy Copyright Allán Cardona 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

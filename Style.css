@@ -1,0 +1,130 @@
+*{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+body{
+    background-image: url(/imagenes/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Diseño del encabezado de pagina*/
+header{
+    
+    padding: 20px 0px;
+}
+
+.logo{
+    width: 15%;
+}
+
+/* --------------------------------------------*/
+/*Diseño del main*/
+
+main{
+    /*background-color: red;*/
+    display: flex;
+    margin: 50px auto;
+}
+/* Caja de Texto para ingresar el texto a encriptar*/
+.text-area{
+    backdrop-filter: blur(8px);
+    background-color: hsla(0,0%, 10%, .1);
+    border: none;
+    border-radius: 24px;
+    color: white;
+    margin-left: 210px;
+    margin-top: 20px;
+    /*text-transform: lowercase;*/
+    font-weight: bold;
+    
+}
+::placeholder{
+    color:white; 
+}
+.text-area:focus{
+    outline: none;
+}
+/* Caja de Texto para Mostrar el texto encriptado*/
+.text-mensaje{
+    backdrop-filter: blur(8px);
+    background-color: hsla(0,0%, 10%, .1);
+    background-image: url(/imagenes/texto.png );
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+.text-mensaje:focus{
+    outline: none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-encriptar{
+    margin-left: 210px;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.btn-desencriptar{
+    margin-left: 210px;
+    background-color: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    font-weight: bolder;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.btn-copiar{
+    
+    border: 3px solid blue;
+    border-radius: 24px;
+    font-weight: bolder;
+    color:#0A3871;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 130px;
+    margin-top: 425px;
+    position: absolute;
+    width: 336px;
+}
+.informacion{
+    margin-left: 210px;
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+/* --------------------------------------------*/
+/*Diseño del pie de pagina*/
+footer{
+   
+    opacity: 100%;
+    text-align: center;
+    padding: 35px;
+    margin-top: 20px;
+}
+.derechosAutor{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
